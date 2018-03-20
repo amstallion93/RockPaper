@@ -546,5 +546,5 @@
 		<property name="ticketBusinessService" ref="ticketBusinessService"/>
 	</bean>
 	
-	<bean id="NewProductCreateWorkflowJob" class="com.rockpaper.core.job.NewProductCreateWorkflowJob" autowire="byName"/>
+	
 </beans>
