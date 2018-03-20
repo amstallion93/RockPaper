@@ -1,0 +1,33 @@
+# -----------------------------------------------------------------------
+# [y] hybris Platform
+#
+# Copyright (c) 2017 SAP SE or an SAP affiliate company.  All rights reserved.
+#
+# This software is the confidential and proprietary information of SAP
+# ("Confidential Information"). You shall not disclose such Confidential
+# Information and shall use it only in accordance with the terms of the
+# license agreement you entered into with SAP.
+# -----------------------------------------------------------------------
+# ImpEx for Importing Categories
+
+# Macros / Replacement Parameter definitions
+$storePrefix=RockPaper
+$productCatalog=$storePrefixProductCatalog
+$productCatalogName=$storePrefixProductcatalog
+
+$catalogVersion=catalogversion(catalog(id[default=$productCatalog]),version[default='Staged'])[unique=true,default=$productCatalog:Staged]
+
+# Language
+$lang=en
+
+# Create Categories
+UPDATE Category;code[unique=true];$catalogVersion;name[lang=$lang]
+;1;;Category1
+;10;;Category10
+;20;;Category20
+;30;;Category30
+;40;;Category40
+;100;;Category100
+;200;;Category200
+;300;;Category300
+;400;;Category400

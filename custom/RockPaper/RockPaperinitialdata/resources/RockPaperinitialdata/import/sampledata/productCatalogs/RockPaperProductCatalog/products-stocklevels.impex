@@ -1,0 +1,67 @@
+# -----------------------------------------------------------------------
+# [y] hybris Platform
+#
+# Copyright (c) 2017 SAP SE or an SAP affiliate company.  All rights reserved.
+#
+# This software is the confidential and proprietary information of SAP
+# ("Confidential Information"). You shall not disclose such Confidential
+# Information and shall use it only in accordance with the terms of the
+# license agreement you entered into with SAP.
+# -----------------------------------------------------------------------
+# ImpEx for Importing Products Stock Levels and Warehouses
+
+# Macros / Replacement Parameter definitions
+
+$storePrefix=RockPaper
+$productCatalog=$storePrefixProductCatalog
+$vendor=RockPaper
+
+$catalogVersion=catalogversion(catalog(id[default=$productCatalog]),version[default='Staged'])[unique=true,default=$productCatalog:Staged]
+
+
+INSERT_UPDATE Vendor;code[unique=true]
+;$vendor
+
+INSERT_UPDATE Warehouse;code[unique=true];vendor(code);default[default=true]
+;warehouse_c;$vendor;
+INSERT_UPDATE StockLevel;available;warehouse(code)[unique=true];inStockStatus(code);maxPreOrder;maxStockLevelHistoryCount;overSelling;preOrder;productCode[unique=true];reserved
+;100;warehouse_c;forceInStock;0;-1;0;0;0001;0
+;100;warehouse_c;forceInStock;0;-1;0;0;0002;0
+;100;warehouse_c;forceInStock;0;-1;0;0;0003;0
+;100;warehouse_c;forceInStock;0;-1;0;0;0004;0
+;100;warehouse_c;forceInStock;0;-1;0;0;0005;0
+;100;warehouse_c;forceInStock;0;-1;0;0;0006;0
+;100;warehouse_c;forceInStock;0;-1;0;0;0007;0
+;100;warehouse_c;notSpecified;0;-1;0;0;0100;0
+;100;warehouse_c;notSpecified;0;-1;0;0;0101;0
+;100;warehouse_c;notSpecified;0;-1;0;0;0102;0
+;100;warehouse_c;notSpecified;0;-1;0;0;0110;0
+;100;warehouse_c;notSpecified;0;-1;0;0;0111;0
+;100;warehouse_c;notSpecified;0;-1;0;0;0112;0
+;100;warehouse_c;notSpecified;0;-1;0;0;0200;0
+;100;warehouse_c;notSpecified;0;-1;0;0;0201;0
+;100;warehouse_c;notSpecified;0;-1;0;0;0202;0
+;100;warehouse_c;notSpecified;0;-1;0;0;0210;0
+;100;warehouse_c;notSpecified;0;-1;0;0;0211;0
+;100;warehouse_c;notSpecified;0;-1;0;0;0212;0
+
+UPDATE Product;code[unique=true];$catalogVersion;stockLevels(productCode,warehouse(code));vendors(code)
+;0001;;0001:warehouse_c;RockPaper
+;0002;;0002:warehouse_c;RockPaper
+;0003;;0003:warehouse_c;RockPaper
+;0004;;0004:warehouse_c;RockPaper
+;0005;;0005:warehouse_c;RockPaper
+;0006;;0006:warehouse_c;RockPaper
+;0007;;0007:warehouse_c;RockPaper
+;0200;;0100:warehouse_c;RockPaper
+;0201;;0101:warehouse_c;RockPaper
+;0202;;0102:warehouse_c;RockPaper
+;0210;;0110:warehouse_c;RockPaper
+;0211;;0111:warehouse_c;RockPaper
+;0212;;0112:warehouse_c;RockPaper
+;0300;;0200:warehouse_c;RockPaper
+;0301;;0201:warehouse_c;RockPaper
+;0302;;0202:warehouse_c;RockPaper
+;0310;;0210:warehouse_c;RockPaper
+;0311;;0211:warehouse_c;RockPaper
+;0312;;0212:warehouse_c;RockPaper

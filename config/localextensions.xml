@@ -1,0 +1,94 @@
+<hybrisconfig xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:noNamespaceSchemaLocation='../bin/platform/resources/schemas/extensions.xsd'>
+  <extensions>
+    <path dir='${HYBRIS_BIN_DIR}' autoload='false' />
+    <extension name='mcc' />
+    <extension name='adaptivesearchsolr' />
+    <extension name='adaptivesearchbackoffice' />
+    <extension name='adaptivesearchsamplesaddon' />
+    <extension name='adaptivesearchwebservices' />
+    <extension name='commerceservicesbackoffice' />
+    <extension name='solrfacetsearchbackoffice' />
+    <extension name='solrserver' />
+	<extension name="importcockpit" />
+	<extension name="hmc" />
+	
+    <extension name='RockPapercockpits' />
+    <extension name='RockPaperinitialdata' />
+    <extension name='RockPaperfulfilmentprocess' />
+    <extension name='RockPaperstorefront' />
+    
+    <extension name='RockPapercore' />
+	<extension name='RockPaperfacades' />
+    
+    
+    <extension name='captchaaddon' />
+    <extension name='acceleratorwebservicesaddon' />
+    <extension name='commerceorgsamplesaddon' />
+    <extension name='orderselfserviceaddon' />
+    <extension name='rulebuilderbackoffice' />
+    <extension name='couponbackoffice' />
+    <extension name='droolsruleengineservices' />
+    <extension name='couponfacades' />
+    <extension name='promotionenginesamplesaddon' />
+    <extension name='assistedservicestorefront' />
+    <extension name='assistedservicewebservices' />
+    <extension name='assistedserviceyprofileaddon' />
+    <extension name='assistedservicecustomerinterestsaddon' />
+    <extension name='assistedservicepromotionaddon' />
+    <extension name='customerticketingaddon' />
+    <extension name='customersupportbackoffice' />
+    <extension name='hybrisanalyticsaddon' />
+    <extension name='yprofileeventtrackingws' />
+    <extension name='yprofileeventadapter' />
+    <extension name='yprofileprocessadapter' />
+    <extension name='privacyoverlayeraddon' />
+    <extension name='yaasconfigurationbackoffice' />
+    <extension name='textfieldconfiguratortemplatebackoffice' />
+    <extension name='textfieldconfiguratortemplateaddon' />
+    <extension name='cmswebservices' />
+    <extension name='smarteditwebservices' />
+    <extension name='cmssmarteditwebservices' />
+    <extension name='permissionswebservices' />
+    <extension name='smarteditaddon' />
+    <extension name='cmssmartedit' />
+    <extension name='cmsbackoffice' />
+    <extension name='consignmenttrackingaddon' />
+    <extension name='consignmenttrackingmock' />
+    <extension name='consignmenttrackingbackoffice' />
+    <extension name='notificationaddon' />
+    <extension name='customerinterestsaddon' />
+    <extension name='stocknotificationaddon' />
+    <extension name='configurablebundleaddon' />
+    <extension name='previewpersonalizationweb' />
+    <extension name='personalizationcmsweb' />
+    <extension name='personalizationsmartedit' />
+    <extension name='personalizationpromotionssmartedit' />
+    <extension name='personalizationsampledataaddon' />
+    <extension name='personalizationyprofile' />
+    <extension name='personalizationpromotions' />
+    <extension name='personalizationpromotionsweb' />
+    <extension name='personalizationservicesbackoffice' />
+    <extension name='personalizationpromotionsbackoffice' />
+    <extension name='personalizationcmsbackoffice' />
+    <extension name='personalizationintegrationbackoffice' />
+    <extension name='personalizationsearchbackoffice' />
+    <extension name='personalizationsearchsmartedit' />
+    <extension name='personalizationsearchweb' />
+    <extension name='personalizationsearchsamplesaddon' />
+    <extension name='assistedserviceatddtests' />
+    <extension name='promotionengineatddtests' />
+    <extension name='textfieldconfiguratortemplateatddtests' />
+    <extension name='configurablebundleatddtests' />
+    <extension name='configurablebundlecockpits' />
+    <extension name='pcmbackofficesamplesaddon' />
+    <extension name='b2cangularaddon' />
+    <extension name='xyformscockpits' />
+    <extension name='xyformsbackoffice' />
+    <extension name='xyformsstorefrontcommons' />
+    <extension name='xyformssamples' />
+    <extension name='xyformsweb' />
+    <extension name='platformbackoffice' />
+    <extension name='xyformsatddtests' />
+    <extension name='orbeonweb' />
+  </extensions>
+</hybrisconfig>
