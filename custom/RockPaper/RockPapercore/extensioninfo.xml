@@ -17,7 +17,7 @@
 		
 		<requires-extension name="acceleratorcms"/>
 		<requires-extension name="solrserver"/>
-		<!-- <requires-extension name="RockPaperfacades"/> -->
+		
 		<coremodule generated="true" manager="com.rockpaper.core.jalo.RockPaperCoreManager" packageroot="com.rockpaper.core"/>
 
 		
